@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# remove old tag
+rm -r tag
+rm -r _site/tag
+
+# build site
+bundle exec jekyll build
+
+# copy tag
+cp -r _site/tag .
+
+rm -r _site/
+# upload to github
+git add tag
+git commit -m "update tag"
+git push origin master
+
