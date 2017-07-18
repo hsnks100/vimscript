@@ -34,9 +34,6 @@
     -webkit-touch-callout: none;
     -webkit-font-smoothing: antialiased;
 }
-div {
-    display: block;
-}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
